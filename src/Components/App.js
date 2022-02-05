@@ -12,7 +12,7 @@ const Home = () => (
 function App() {
   return (
     <div className="App">
-      <h1>Convertify</h1>
+      <h1 style={{ marginLeft:10 }}>Convertify</h1>
       <div className="MenuContainer">
         <button className="MenuItem"
           onClick={async () => navigate('/Login')}

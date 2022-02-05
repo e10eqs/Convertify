@@ -1,15 +1,20 @@
 .App {
-  text-align: center;
+  text-align: Left;
   justify-content: center;
   color:rgb(42, 141, 63);
 }
 .MenuContainer {
+  height: 75px;
   display: flex; 
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 15px 0px;
+  background-color: blue;
 }
 
 .MenuItem {
+  height: inherit;
+  width: 30%;
   background-color: #774caf;
   border: 2px black solid; 
   color: white;
@@ -18,4 +23,9 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.MenuItem:hover {
+  color: red;
 }
