@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  color:rgb(42, 141, 63);
+}
+.MenuContainer {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.MenuItem {
+  background-color: #774caf;
+  border: 2px black solid; 
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
