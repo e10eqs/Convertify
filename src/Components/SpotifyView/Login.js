@@ -18,7 +18,7 @@ function Login(props) {
             setPlaylists(data.body.items)
         })
     }, [props.token]);
-
+    
     return (
         <div>
             <div className="Login">
@@ -38,12 +38,10 @@ function Login(props) {
                 }
             </div>
             <div className='Playlists'>
-                {playlists ?
-                    playlists.map(playlist => {
-                    return (
-                    <Playlist name={playlist.name} img={playlist.images[0].url} tracks={playlist.tracks.total} />
-                    )}) :
-                    null
+                {playlists &&
+                    playlists.map( ( playlist,index) => (
+                    <Playlist key={index} name={playlist.name} img={playlist.images[0].url}/>
+                    )) 
                 }
             </div>
         </div>

@@ -7,10 +7,9 @@
   }
 
 .Playlists {
-    margin-left: 30px;
-    margin-right: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
