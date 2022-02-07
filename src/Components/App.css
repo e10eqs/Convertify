@@ -1,31 +1,52 @@
-.App {
-  text-align: Left;
-  justify-content: center;
-  color:rgb(42, 141, 63);
+.TopBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 5px;
 }
+
+.StatusBar {
+    gap: 10px;
+}
+
+.StatusCircle {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.StatusAuth {
+    background-color: rgb(10, 230, 10);
+}
+
+.StatusNoAuth {
+    background-color: rgb(230, 10, 10);
+}
+
 .MenuContainer {
-  height: 75px;
-  display: flex; 
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 15px 0px;
-  background-color: blue;
+    height: 75px;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 15px 0px;
+    background-color: blue;
 }
 
 .MenuItem {
-  height: inherit;
-  width: 30%;
-  background-color: #774caf;
-  border: 2px black solid; 
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 10px;
-  cursor: pointer;
+    height: inherit;
+    width: 30%;
+    background-color: #774caf;
+    border: 2px black solid; 
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .MenuItem:hover {
-  color: red;
+    color: red;
 }

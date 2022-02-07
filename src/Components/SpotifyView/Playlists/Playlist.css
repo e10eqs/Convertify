@@ -1,0 +1,19 @@
+.Playlist {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    border: black 1px solid;
+    background-color: beige;
+}
+
+.Image {
+    height: 100%;
+    border-radius: 20px;
+    border: black 1px solid;
+}

@@ -1,0 +1,16 @@
+.Login {
+    text-align: center;
+    justify-content: center;
+    color:rgb(42, 141, 63);
+    display: flex;
+    justify-content: space-around;
+  }
+
+.Playlists {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
