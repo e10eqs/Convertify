@@ -4,6 +4,7 @@ import { SpotifyAuth, Scopes } from "react-spotify-auth";
 import "react-spotify-auth/dist/index.css";
 import SpotifyWebApi from "spotify-web-api-node/src/spotify-web-api";
 import Playlist from "./Playlists/Playlist";
+import Cookies from "js-cookie";
 
 function Login(props) {
   const [playlists, setPlaylists] = useState([]);
@@ -24,7 +25,8 @@ function Login(props) {
                 console.log(data.body.items);
                 setPlaylists(playlists.concat(data.body.items));
             });
-        });
+        })
+        .catch((error) => console.log(error));
     }, [props.token]);
 
     //get playlists as array
@@ -55,8 +57,12 @@ function Login(props) {
                     Scopes.playlistReadPrivate,
                     Scopes.playlistReadCollaborative,
                     Scopes.userLibraryModify,
+                    Scopes.userReadPrivate,
+                    Scopes.userReadEmail,
                 ]}
-                onAccessToken={(token) => props.setToken(token)}
+                onAccessToken={(token) =>{
+                  Cookies.set("spotifyAuthToken", token)
+                  props.setToken(token)}}
             />
             )}
         </div>
