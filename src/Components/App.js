@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import "./App.css";
 import { Router, navigate } from "@reach/router";
 import Spotify from "./SpotifyView/Login";
@@ -15,12 +15,9 @@ const AppleMusic = () => (
 
 function App() {
     //Tokens here so we can set status flags in the main screen
-    const [spotifyToken, setSpotifyToken] = React.useState(
-        Cookies.get("spotifyAuthToken")
-    );
-    const [appleToken, setAppleToken] = React.useState(
-        Cookies.get("appleAuthToken")
-    );
+    const [spotifyToken, setSpotifyToken] = useState(Cookies.get("spotifyAuthToken"));
+    const [appleToken, setAppleToken] = useState(Cookies.get("appleAuthToken"));
+
     return (
         <div>
             <div className="TopBar">

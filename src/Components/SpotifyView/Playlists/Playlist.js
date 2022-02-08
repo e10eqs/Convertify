@@ -9,7 +9,7 @@ function Playlist(props) {
     return (
         <div className="Playlist">
             <img src={props.img} className="Image"></img>
-            <h1>{props.name}</h1>
+            <h1 style={{width: '75%'}}>{props.name}</h1>
             <button className="Convert"
             onClick={handleClick}>Convert</button>
         </div>
